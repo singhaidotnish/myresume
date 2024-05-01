@@ -14,16 +14,16 @@ resume_name:                    "Nishith Singhai"
 resume_title:                   "Sr Pipeline TD"
 
 # used for the contact button in _layouts/resume.html
-resume_contact_email:           "lisasimpson@youremailaddress.com"
+resume_contact_email:           "singhai.nish@gmail.com"
 
 # the next two items are used for schema itemprops in _layouts/resume.html
-resume_contact_telephone:       "555-7334"
-resume_contact_address:         "742 Evergreen Terrace, Springfield"
+resume_contact_telephone:       "9029-555541"
+resume_contact_address:         "302 Jigna Arcade Navi Mumbai"
 
-resume_header_contact_info:     "742 Evergreen Terrace, Springfield • 555-7334 • lisasimpson@youremailaddress.com"
+resume_header_contact_info:     "302 Jigna Arcade Navi Mumbai • 400 709 • singhai.nish@gmail.com"
 display_header_contact_info:    "false"
 
-resume_header_intro: "<p>This is the executive summary. You should write a few brief, concise, and meaningful sentences about yourself from a professional context, and your immediate career goals. Make the length appropriate for your needs, but keep it brief and concise</p>"
+resume_header_intro: "<p>I develop methods and tools that richly integrate the capabilities of people and machines in efforts to produce film, animation and game experiences. I combine skills and deep understanding of processes, data management, programming, and human-computer interaction to enable effective means for tight collaboration on projects of any scale. </p>"
 
 # use "yes" to display the email contact button,
 # "no" to display an "I'm not looking for work" message,
