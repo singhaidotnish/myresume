@@ -1,7 +1,8 @@
 # Skills
 # Organizational leadership
 - skill: Technical Skills
-  summary: <ul class="resume-item-list"><li>VFX Tools &mdash; Maya, Nuke, Houdini</li><li>Supporting Tools &mdash; pycharm(code editor), sublime(text editor), ksnip(snapshot), diff(compare file)</li><li>Language &mdash; python, javascript</li><li>Framework &mdash; django, jekyll</li></ul>
+  awards:
+    - award: <ul class="resume-item-list"><li>VFX Tools &mdash; Maya, Nuke, Houdini</li><li>Supporting Tools &mdash; pycharm(code editor), sublime(text editor), ksnip(snapshot), diff(compare file)</li><li>Language &mdash; python, javascript</li><li>Framework &mdash; django, jekyll</li></ul>
   description: I have several years of experience leading people and projects in different VFX houses. I can lead in any context.
 
 # Communications strategy
