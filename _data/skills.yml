@@ -4,11 +4,14 @@
   awards:
     - award: <ul class="resume-item-list"><li>VFX Tools &mdash; Maya, Nuke, Houdini</li><li>Supporting Tools &mdash; pycharm(code editor), sublime(text editor), ksnip(snapshot), diff(compare file)</li><li>Language &mdash; python, javascript</li><li>Framework &mdash; django, jekyll</li></ul>
   description: I have several years of experience leading people and projects in different VFX houses. I can lead in any context.
+  summary: <ul class="resume-item-list"><li>Enhance hdri publishing tool with new features (python,  pyqt5 )	</li>&nbsp;<li>Upgrade photoshop shotgrid integration for production use (python, photoshop, shotgrid)</li></ul>
 
 # Communications strategy
 - skill: Communications strategy
   description: Content and marketing strategy,
+  summary: <ul class="resume-item-list"><li>Enhance hdri publishing tool with new features (python,  pyqt5 )	</li>&nbsp;<li>Upgrade photoshop shotgrid integration for production use (python, photoshop, shotgrid)</li></ul>
 
 # Digital content development and creation
 - skill: Digital content development and creation
   description: Copy writing, graphic design, web design, front-end web development, print design
+  summary: <ul class="resume-item-list"><li>Enhance hdri publishing tool with new features (python,  pyqt5 )	</li>&nbsp;<li>Upgrade photoshop shotgrid integration for production use (python, photoshop, shotgrid)</li></ul>
