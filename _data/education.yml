@@ -3,11 +3,17 @@
   uni: Mumbai University
   year: 1989 &mdash; 1993
   awards:
-    - award: First Class Passing
-  summary: Inspite of ATKT ( allowed to keep term ) in Second year. Managed to pass out of third year with topping in 4 subjects. 2 Major, 2 Minor ( operation research )
+    - award: First Class
+  summary: It indeed is an award, knowing that inspite of ATKT ( allowed to keep term ) in Second year. Managed to pass out of third year with topping, 4 subjects. 2 Major, 2 Minor ( operation research )
 
 - degree: Language Study ( German )
   uni: Max Mueller Bhavan
   year: 1994
   award: 2nd Level Exams Completed
-  summary: Just like that, learnt German
+  summary: Out of curiosity, learnt German
+
+# self paced learning
+- spl: https://www.youtube.com/@VideoTechExplained
+  uni: youtube
+  year: 2023 &mdash; 2024
+  summary: Extremely useful content. Have gone through and understood most of the details.

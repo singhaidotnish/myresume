@@ -7,6 +7,9 @@
 - skill: Soft Skills
   summary: <ul class="resume-item-list"><li>Bad at Team Work &mdash; Having ADHD so cannot do much</li><li>Bad at formulating thoughts &mdash; So not able to write code and documents well</li></ul>
 
+- skill: Self Paced Learning Skills
+  summary: <ul class="resume-item-list"><li>All open source projects from ASWF &mdash; Well not by 100% but exploring all projects from ASWF plaform bit by bit</li><li>OCIO</li><li>OTIO</li><li>OIIO</li>
+  description: The VFX industry covers 100 percent of these projects, it is worth to go through them 
 
 ## Communications strategy
 #- skill: Communications strategy
