@@ -1,15 +1,21 @@
 # Jobs
+# Freelance
+- company: Self
+  position: Freelancer
+  duration: Jan, 2024 - till date
+  summary: <ul class="resume-item-list"><li>Setup Shotgrid Publishing Tool for Maya	(python, shotgrid)</li>&nbsp;<li>Clean Up Tool for maya batch scene files run from command line (python, shell, bash)</li></ul>
+
 # Sr Pipeline TD
 - company: Rocket Science, Vancouver, Canada
   position: Sr Pipeline TD
-  duration: Apr, 2023 &mdash; Jul, 2023
+  duration: May, 2023 &mdash; Sep, 2023
   summary: <ul class="resume-item-list"><li>Enhance hdri publishing tool with new features (python,  pyqt5 )	</li>&nbsp;<li>Upgrade photoshop shotgrid integration for production use (python, photoshop, shotgrid)</li></ul>
 
 
 # Sr Pipeline TD
 - company: BOTVFX, Chennai, India
   position: Sr Pipeline TD
-  duration: Dec, 2021 &mdash; Mar, 2023
+  duration: Oct, 2021 &mdash; Mar, 2023
   summary: <ul class="resume-item-list"><li>Upgrade publisher tool with features taken as input from VFX supervisor (python, pyqt5)</li><li>Share skills, information, experience and ideas with other TD's and artist's from other dept's. (python, pyqt5, shotgrid) </li><li>Build support structure for new pipeline api.</li><li>Test project - AI ML bidding</li></ul>
 
 
@@ -23,5 +29,12 @@
 # Sr Pipeline TD
 - company: Atomic Arts, Mumbai, India
   position: Sr Pipeline TD
-  duration: Jan, 2017  &mdash; Jun, 2018
+  duration: Oct, 2017  &mdash; Aug, 2018
   summary: <ul class="resume-item-list"><li>Shotgrid Integration in existing pipeline from scratch (python, pyqt5, nuke, bash, tcl)</li><li>Shotgrid Publish integration into Nuke  (nuke, python, shotgrid)</li><li>3dEqualizer publish tool (python, pyqt5, 3dequalizer)</li></ul>
+
+
+# Sr Pipeline TD
+- company: Prime Focus, Mumbai, India
+  position: Sr Pipeline TD
+  duration: Sep, 2014  &mdash; Aug, 2017
+  summary: <ul class="resume-item-list"><li>Troubleshoot Floor Issues (python, pyqt5, maya, nuke)</li><li>Tool to Publish files to System (python, pyqt5, maya, nuke)</li></ul>
