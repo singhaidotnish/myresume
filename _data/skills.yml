@@ -7,10 +7,10 @@
   summary: <ul class="resume-item-list"><li>Communicate &mdash; Ask all questions</li>Execute &mdash; Give deliverables to client (internal , external) as required</li><li>Rewire &mdash; If something does not work don't stop there, rewire</li></ul>
 
 - skill: Self Paced Learning Skills
-  summary: <ul class="resume-item-list"><li>"ASWF &mdash; A neutral forum to coordinate open-source cross-project efforts, establish best practices and share resources across the motion picture and broader media industries.
-           :\nOCIO &mdash; OCIO provides a straightforward and consistent user experience across all supporting applications while allowing for sophisticated back-end configuration options suitable for high-end production usage.
-           :\nAYON &mdash; A key feature of AYON is its ability to integrate with other industry-standard tools and formats through support for libraries like OpenUSD and OpenTimelineIO while also being open-source.
-           :\nOTIO &mdash; An open source API and interchange format that facilitates the communication of editorial data and timeline information in rich and flexible workflows."</li>
+  summary: <ul class="resume-item-list"><li>ASWF &mdash; A neutral forum to coordinate open-source cross-project efforts, establish best practices and share resources across the motion picture and broader media industries.</li>
+           "\nOCIO &mdash; OCIO provides a straightforward and consistent user experience across all supporting applications while allowing for sophisticated back-end configuration options suitable for high-end production usage.
+           \nAYON &mdash; A key feature of AYON is its ability to integrate with other industry-standard tools and formats through support for libraries like OpenUSD and OpenTimelineIO while also being open-source.
+           \nOTIO &mdash; An open source API and interchange format that facilitates the communication of editorial data and timeline information in rich and flexible workflows."
 
 
 #  description: The VFX industry covers 100 percent of these projects, it is worth to go through them
