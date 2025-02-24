@@ -5,3 +5,4 @@ _site
 Gemfile.lock.old
 Gemfile.lock
 workspace.xml
+.myresume
