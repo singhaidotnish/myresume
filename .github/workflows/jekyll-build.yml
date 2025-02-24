@@ -1,26 +1,25 @@
-name: Jekyll Build & Deploy
+name: Jekyll Build
 
 on:
   push:
     branches:
-      - main  # Make sure 'main' is your source branch, NOT 'gh-pages'
+      - main  # Trigger on changes to main
   pull_request:
 
 jobs:
-  build_and_deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-      - name: Set up Ruby
+      - name: Setup Ruby & Install Jekyll
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.1  # Ensure Jekyll compatibility
-          bundler-cache: true
+          ruby-version: 3.0
 
-      - name: Install Dependencies
+      - name: Install Jekyll dependencies
         run: bundle install
 
       - name: Clean & Build Jekyll
@@ -28,9 +27,11 @@ jobs:
           rm -rf _site .jekyll-cache
           JEKYLL_ENV=production bundle exec jekyll build
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+#      - name: Build Jekyll site
+#        run: bundle exec jekyll build
+
+      - name: Upload site artifact
+        uses: actions/upload-artifact@v3
         with:
-          github_token: ${{ secrets.GH_PAT }}
-          publish_dir: ./_site
-          publish_branch: gh-pages  # Only deploy to gh-pages
+          name: jekyll-site
+          path: _site

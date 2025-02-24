@@ -1,0 +1,38 @@
+name: Deploy Jekyll to GitHub Pages
+
+on:
+  workflow_run:
+    workflows: ["Jekyll Build"]
+    types:
+      - completed
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Ensures full history
+
+      - name: Download built Jekyll site
+        uses: actions/download-artifact@v3
+        with:
+          name: jekyll-site
+          path: _site
+
+      - name: Setup Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Deploy to gh-pages
+        run: |
+          git clone --branch gh-pages --single-branch "https://${{ secrets.GH_PAT }}@github.com/singhaidotnish/myresume.git" gh-pages
+          rm -rf gh-pages/*
+          cp -r _site/* gh-pages/
+          cd gh-pages
+          git add .
+          git commit -m "Deploy Jekyll site" || echo "No changes to commit"
+          git push "https://${{ secrets.GH_PAT }}@github.com/singhaidotnish/myresume.git" gh-pages
