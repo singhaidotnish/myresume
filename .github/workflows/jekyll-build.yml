@@ -30,8 +30,9 @@ jobs:
 #      - name: Build Jekyll site
 #        run: bundle exec jekyll build
 
-      - name: Upload site artifact
+      - name: Upload built Jekyll site
         uses: actions/upload-artifact@v4
         with:
           name: jekyll-site
           path: _site
+          retention-days: 5  # Keep the artifact for 5 days
