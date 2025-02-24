@@ -20,6 +20,9 @@ jobs:
           ruby-version: 3.1  # Use the Ruby version required by Jekyll
           bundler-cache: true  # Caches gems automatically
 
+      - name: Unset Bundler Deployment Mode
+        run: bundle config unset deployment
+
       - name: Install Dependencies
         run: bundle install
 
