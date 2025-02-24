@@ -23,11 +23,18 @@ jobs:
       - name: Unset Bundler Deployment Mode
         run: bundle config unset deployment
 
-      - name: Install Dependencies
-        run: bundle install
+#      - name: Install Dependencies
+#        run: bundle install
 
-      - name: Build Jekyll Site
-        run: bundle exec jekyll build
+#      - name: Build Jekyll Site
+#        run: bundle exec jekyll build
+
+      - name: Clean & Build Jekyll
+        run: |
+          rm -rf _site .jekyll-cache
+          bundle install
+          bundle exec jekyll build
+
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
