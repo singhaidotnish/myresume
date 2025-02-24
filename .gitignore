@@ -2,5 +2,6 @@
 .bundle
 .sass-cache
 _site
+Gemfile.lock.old
 Gemfile.lock
 workspace.xml
