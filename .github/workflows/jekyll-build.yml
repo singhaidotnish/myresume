@@ -3,7 +3,7 @@ name: Jekyll Build & Deploy
 on:
   push:
     branches:
-      - gh-pages  # Change if using 'main' or another branch
+      - main  # Make sure 'main' is your source branch, NOT 'gh-pages'
   pull_request:
 
 jobs:
@@ -17,28 +17,20 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.1  # Use the Ruby version required by Jekyll
-          bundler-cache: true  # Caches gems automatically
+          ruby-version: 3.1  # Ensure Jekyll compatibility
+          bundler-cache: true
 
-      - name: Unset Bundler Deployment Mode
-        run: bundle config unset deployment
-
-#      - name: Install Dependencies
-#        run: bundle install
-
-#      - name: Build Jekyll Site
-#        run: bundle exec jekyll build
+      - name: Install Dependencies
+        run: bundle install
 
       - name: Clean & Build Jekyll
         run: |
           rm -rf _site .jekyll-cache
-          bundle install
-          bundle exec jekyll build
-
+          JEKYLL_ENV=production bundle exec jekyll build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
-          publish_branch: gh-pages  # Deploy to gh-pages, but source must be another branch
+          publish_branch: gh-pages  # Only deploy to gh-pages
