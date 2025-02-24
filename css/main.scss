@@ -2,9 +2,11 @@
 ---
 
 // "Reset" styles and SCSS reusable components
-// @import "normalize";
-// @import "mixins";
-// @import "variables";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+// Reset and dependencies
+@import "bootstrap/normalize";
 
 # Generic site base & layout styles
 @import "base";
