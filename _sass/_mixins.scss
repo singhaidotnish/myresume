@@ -1,103 +1,60 @@
-// Mixins
-// ---------------------------------------/
-
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-  -moz-border-radius: $radius;
-  border-radius: $radius;
+/* Mixins */
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
-@mixin transition($value) {
-  -webkit-transition: $value;
-  -moz-transition: $value;
-  transition: $value;
+@mixin horizontal-align {
+  margin: 0 auto;
+  display: table;
 }
 
-// Clearfix
-//
-// Clears floats via mixin (avoid using as a class).
+@mixin grayscale($value) {
+  -webkit-filter: grayscale($value);
+  filter: grayscale($value);
+}
 
-@mixin clearfix {
-  &:before {
-    display: table;
-    content: "";
+@mixin transition($args...) { // color .2s ease-in-out
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin bp-large {
+  @media only screen and (min-width: 1200px) {
+    @content;
   }
+}
 
-  &:after {
-    display: table;
-    clear: both;
-    content: "";
+@mixin bp-medium {
+  @media only screen and (min-width: 992px) and (max-width: 1195px) {
+    @content;
   }
 }
 
-// media querie tools
-
-@mixin media_max($screen_width) {
-  @media (max-width: $screen_width) { @content; }
+@mixin bp-small {
+  @media only screen and (min-width: 770px) and (max-width: 990px) {
+    @content;
+  }
 }
 
-@mixin media_min($screen_width) {
-  @media (min-width: $screen_width) { @content; }
+@mixin bp-xsmall {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
 }
 
-@mixin media_larger_than_mobile {
-  @media (min-width: 600px) { @content; }
-}
+/* Functions */
 
-@mixin media_mobile {
-  @media (max-width: 600px) { @content; }
-}
-
-// type utilities
-
-@mixin sans {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-@mixin sans_light {
-  @include sans;
-  font-weight: 300;
-}
-
-@mixin sans_regular {
-  @include sans;
-  font-weight: 400;
-}
-
-@mixin sans_bold {
-  @include sans;
-  font-weight: 700;
-}
-
-@mixin sans_extrabold {
-  @include sans;
-  font-weight: 800;
-}
-
-@mixin serif {
-  font-family: "Lora", "Minion Pro", Palatino, Georgia, serif;
-}
-
-@mixin serif_regular {
-  @include serif;
-  font-weight: 400;
-}
-
-@mixin serif_bold {
-  @include serif;
-  font-weight: 700;
-}
-
-// layout
-
-@mixin section_border {
-  border-top: 4px solid #c7c7c7;
-  border-bottom: 2px solid #c7c7c7;
-  padding: .2rem 0 .4rem;
-}
-
-@mixin section_border_thin {
-  border-top: 1px solid #c7c7c7;
-  border-bottom: 1px solid #c7c7c7;
-  padding: .2rem 0 .2rem;
+/* Slightly darken a color
+ @param {Color} $color - color to shade
+ @param {Number} $percentage - percentage of `$color` in returned color
+ @return {Color}
+*/
+@function darken($color, $percentage) {
+  @return mix(black, $color, $percentage);
 }
