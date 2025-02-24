@@ -1,7 +1,7 @@
 # Site settings
 title: "MyResume"
 description: "A resume built from template for Jekyll and GitHub Pages sites."
-url: "https://singhaidotnish.github.com"
+url: "https://singhaidotnish.github.io"
 baseurl: "myresume"
 
 # Build settings
