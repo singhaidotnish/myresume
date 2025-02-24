@@ -58,3 +58,28 @@ resume_theme:                   default
 # Note: when editing locally, remember to restart
 # your Jekyll server when you edit this file. Changes
 # to _config.yml are only recognized when the server starts
+
+# Ensure Jekyll processes all files
+include:
+  - ".htaccess"
+  - "_redirects"
+  - "CNAME"
+  - "robots.txt"
+  - "sitemap.xml"
+  - "assets"
+  - "static"
+
+# Ensure Jekyll doesn't ignore important folders
+keep_files:
+  - assets
+  - static
+  - images
+
+# Disable Jekyll strict mode (useful for missing files)
+strict_front_matter: false
+
+defaults:
+  - scope:
+      path: "assets"
+    values:
+      sitemap: false
