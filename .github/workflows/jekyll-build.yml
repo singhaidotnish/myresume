@@ -35,4 +35,4 @@ jobs:
         with:
           name: jekyll-site
           path: _site
-          retention-days: 5  # Keep the artifact for 5 days
+          retention-days: 30  # Keep the artifact for 5 days
