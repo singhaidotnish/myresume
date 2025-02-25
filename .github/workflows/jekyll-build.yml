@@ -26,9 +26,6 @@ jobs:
         run: |
           bundle install --jobs 4 --retry 3
 
-      - name: Verify _site directory before build
-        run: ls -la _site
-
       - name: Clean & Build Jekyll
         run: |
           rm -rf _site .jekyll-cache
