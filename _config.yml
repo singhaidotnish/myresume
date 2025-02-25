@@ -49,11 +49,11 @@ resume_section_associations:    false
 resume_social_links:
   resume_github_url:            "https://github.com/singhaidotnish/"
   resume_linkedin_url:          "https://www.linkedin.com/in/singhaidotnish"
-  resume_dribbble_url:          ""
-  resume_facebook_url:          ""
-  resume_instagram_url:          ""
-  resume_website_url:          ""
-  resume_twitter_url:          ""
+  resume_dribbble_url:
+  resume_facebook_url:
+  resume_instagram_url:
+  resume_website_url:
+  resume_twitter_url:
 
 resume_print_social_links:      true
 
