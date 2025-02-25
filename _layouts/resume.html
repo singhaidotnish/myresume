@@ -3,11 +3,34 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+    <!-- Google font typography settings - defined in _config.yml -->
+    {% if site.resume_theme == 'default' %}
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:400,300,800,700' rel='stylesheet' type='text/css'>
+    {% endif %}
+
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <link rel="stylesheet" href="{{ '/css/animate.min.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <!-- Styles -->
+  <!--  <link rel="stylesheet" href="{{ '/css/style.css' | prepend: site.baseurl }}">-->
+  </head>
+
+<!--  {% include head.html %}-->
 
   <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
 
-    <div class="wrapper" itemscope itemtype="http://schema.org/Person">
+<!--    <div class="wrapper" itemscope itemtype="http://schema.org/Person">-->
+    <div class="main container" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="telephone" content="{{ site.resume_contact_telephone }}"/>
       <meta itemprop="address" content="{{ site.resume_contact_address }}"/>
 
@@ -283,6 +306,42 @@
 
     </div>
 
-  {% include foot.html %}
+<!--  {% include foot.html %}-->
+      <footer class="site-footer">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-xs-12 col-md-2 col-md-offset-1">
+                <p class="text-muted text-left "><a href="{{ site.url }}">{{ site.footer_text }}</a></p>
+              </div>
+
+              <div class="col-xs-12 col-md-6 col-md-offset-2">
+                <a class="section-jump" href="#top">
+                  <i class="fa fa-angle-up fa-3x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+      <!--  </div>&lt;!&ndash; .main.container &ndash;&gt;-->
+
+          <!-- JavaScript -->
+          <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+          <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+          <script src="{{ '/js/wow.min.js' | relative_url }}"></script>
+          <script src="{{ '/js/app.js' | relative_url }}"></script>
+
+          <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', ' {{ site.google_analytics }}', 'auto');
+            ga('send', 'pageview');
+
+          </script>
+
   </body>
 </html>
