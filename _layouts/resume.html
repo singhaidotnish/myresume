@@ -47,41 +47,46 @@
 <!--            </p>-->
 
 <!--            <a class="contact-button" data-bs-toggle="modal" data-bs-target="#contact">Why not get in touch?</a>-->
-            <a data-toggle="modal" data-target="#contact"> Why not get in touch?</a>
-            <div id="contact" class="modal fade" role="dialog">
-              <div class="modal-dialog modal-md">
-                <div class="modal-content">
+              <div class="hero-container">
 
-                  <div class="modal-header">
-                    <h5 class="modal-title">Contact Me</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                  </div>
+                <div class="hero-content">
 
-                  <div class="modal-body">
-                    <form action="https://formspree.io/f/xbldynvd" method="POST">
-                      <div class="mb-3">
-                        <label for="name">Your Name</label>
-                        <input type="text" class="form-control" name="name" required>
+                    <a data-toggle="modal" data-target="#contact"> Why not get in touch?</a>
+                    <div id="contact" class="modal fade" role="dialog">
+                      <div class="modal-dialog modal-md">
+                        <div class="modal-content">
+
+                          <div class="modal-header">
+                            <h5 class="modal-title">Contact Me</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                          </div>
+
+                          <div class="modal-body">
+                            <form action="https://formspree.io/f/xbldynvd" method="POST">
+                              <div class="mb-3">
+                                <label for="name">Your Name</label>
+                                <input type="text" class="form-control" name="name" required>
+                              </div>
+
+                              <div class="mb-3">
+                                <label for="email">Your Email</label>
+                                <input type="email" class="form-control" name="_replyto" required>
+                              </div>
+
+                              <div class="mb-3">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" name="message" rows="4" required></textarea>
+                              </div>
+
+                              <button type="submit" class="btn btn-primary">Send</button>
+                            </form>
+                          </div>
+
+                        </div>
                       </div>
-
-                      <div class="mb-3">
-                        <label for="email">Your Email</label>
-                        <input type="email" class="form-control" name="_replyto" required>
-                      </div>
-
-                      <div class="mb-3">
-                        <label for="message">Message</label>
-                        <textarea class="form-control" name="message" rows="4" required></textarea>
-                      </div>
-
-                      <button type="submit" class="btn btn-primary">Send</button>
-                    </form>
-                  </div>
-
+                    </div>
                 </div>
               </div>
-            </div>
-
           {% elsif site.resume_looking_for_work == 'no' %}
             <a class="contact-button not-looking no-print">I'm not looking for work right now.</a>
           {% endif %}
