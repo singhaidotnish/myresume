@@ -3,7 +3,7 @@ title: "MyResume"
 description: "A resume built from template for Jekyll and GitHub Pages sites."
 url: "https://singhaidotnish.github.io"
 baseurl: "/myresume"
-
+repository: singhaidotnish/myresume
 # Build settings
 markdown: kramdown
 sass:
