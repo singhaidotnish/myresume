@@ -19,19 +19,23 @@ jobs:
         with:
           ruby-version: 3.0
 
-      - name: Install Jekyll dependencies
-        run: bundle install
+      - name: Install Jekyll
+        run: gem install jekyll
 
-      - name: Verify _site directory
+      - name: Install Jekyll Dependencies
+        run: |
+          bundle install --jobs 4 --retry 3
+
+      - name: Verify _site directory before build
         run: ls -la _site
 
       - name: Clean & Build Jekyll
         run: |
           rm -rf _site .jekyll-cache
-          JEKYLL_ENV=production bundle exec jekyll build
+          JEKYLL_ENV=production bundle exec jekyll build --trace
 
-#      - name: Build Jekyll site
-#        run: bundle exec jekyll build
+      - name: Verify _site directory after build
+        run: ls -la _site
 
       - name: Upload built Jekyll site
         uses: actions/upload-artifact@v4
