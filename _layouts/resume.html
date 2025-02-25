@@ -14,6 +14,8 @@
     {% if site.resume_theme == 'default' %}
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:400,300,800,700' rel='stylesheet' type='text/css'>
     {% endif %}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <link rel="stylesheet" href="{{ '/css/animate.min.css' | relative_url }}">
@@ -65,49 +67,46 @@
         </div>
 
           {% if site.resume_looking_for_work == 'yes' %}
-<!--            <p class="text-center">-->
-<!--              <a class="contact-button" data-bs-toggle="modal" data-bs-target="#contact">Why not get in touch?</a>-->
-<!--            </p>-->
-
-<!--            <a class="contact-button" data-bs-toggle="modal" data-bs-target="#contact">Why not get in touch?</a>-->
               <div class="hero-container">
 
                 <div class="hero-content">
+                    <!-- Contact Button -->
+                    <p class="text-center">
+                      <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Me</a>
+                    </p>
 
-                    <a data-toggle="modal" data-target="#contact"> Why not get in touch?</a>
-                    <div id="contact" class="modal fade" role="dialog">
-                      <div class="modal-dialog modal-md">
+                    <!-- Modal Structure -->
+                    <div id="contactModal" class="modal fade" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
                         <div class="modal-content">
 
                           <div class="modal-header">
-                            <h5 class="modal-title">Contact Me</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            <h5 class="modal-title" id="contactModalLabel">Get in Touch</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
 
                           <div class="modal-body">
                             <form action="https://formspree.io/f/xbldynvd" method="POST">
                               <div class="mb-3">
-                                <label for="name">Your Name</label>
+                                <label for="name" class="form-label">Your Name</label>
                                 <input type="text" class="form-control" name="name" required>
                               </div>
-
                               <div class="mb-3">
-                                <label for="email">Your Email</label>
+                                <label for="email" class="form-label">Your Email</label>
                                 <input type="email" class="form-control" name="_replyto" required>
                               </div>
-
                               <div class="mb-3">
-                                <label for="message">Message</label>
+                                <label for="message" class="form-label">Message</label>
                                 <textarea class="form-control" name="message" rows="4" required></textarea>
                               </div>
-
-                              <button type="submit" class="btn btn-primary">Send</button>
+                              <button type="submit" class="btn btn-success">Send Message</button>
                             </form>
                           </div>
 
                         </div>
                       </div>
                     </div>
+
                 </div>
               </div>
           {% elsif site.resume_looking_for_work == 'no' %}
@@ -328,7 +327,10 @@
 
           <!-- JavaScript -->
           <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-          <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!--          <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+          <!-- Bootstrap JS (for modal functionality) -->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
           <script src="{{ '/js/wow.min.js' | relative_url }}"></script>
           <script src="{{ '/js/app.js' | relative_url }}"></script>
 
