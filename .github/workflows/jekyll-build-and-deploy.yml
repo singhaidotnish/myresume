@@ -42,6 +42,7 @@ jobs:
           retention-days: 30  # Keep the artifact for 5 days
 
   deploy:
+    needs: build  # Ensures build runs before deploy
     runs-on: ubuntu-latest
 
     steps:
