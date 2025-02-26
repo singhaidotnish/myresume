@@ -51,7 +51,7 @@ resume_social_links:
   resume_github_url:            "https://github.com/singhaidotnish/"
   resume_linkedin_url:          "https://www.linkedin.com/in/singhaidotnish"
   resume_website_url:          "https://singhaidotnish.github.io/myresume"
-
+  resume_blog_url:            "https://singhaidotnish.github.io/blog"
 resume_print_social_links:      true
 
 # Design settings
