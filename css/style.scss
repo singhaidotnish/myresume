@@ -27,9 +27,16 @@ $secondary: #FF7B7B;
     Custom
 ---------------------------------------------------------------*/
 
+.contact-container {
+    display: flex;
+    align-items: center;  /* Aligns text properly */
+    gap: 15px;            /* Adjust spacing */
+    flex-wrap: nowrap;    /* Prevents wrapping to a new line */
+}
+
 .contact-info {
-    margin-right: 30px; /* Adjust spacing */
-    display: inline-block; /* Ensures both stay on the same line */
+    display: inline-block;
+    white-space: nowrap;  /* Ensures text stays on the same line */
 }
 
 
