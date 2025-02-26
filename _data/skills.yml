@@ -4,26 +4,12 @@
   summary: <ul class="resume-item-list"><li>VFX Softwares &mdash; Maya, Nuke, Houdini</li><li>Supporting Tools &mdash; pycharm, sublime, ksnip, diff</li><li>Language &mdash; python, javascript, ruby</li><li>Framework &mdash; django, jekyll</li></ul>
 
 - skill: Soft Skills
-  summary: <ul class="resume-item-list"><li>Communicate &mdash; Ask all questions</li>Execute &mdash; Give deliverables to client (internal , external) as required</li><li>Rewire &mdash; If something does not work don't stop there, rewire</li></ul>
+  summary: <ul class="resume-item-list"><li>Communicate &mdash; Ask all and any number of questions</li><li>Execute &mdash; Give deliverables to client (internal , external) as required</li><li>Rewire &mdash; If something does not work don't stop there, rewire</li></ul>
 
 - skill: Self Paced Learning
   summary: <ul class="resume-item-list">ASWF &mdash; A neutral forum to coordinate open-source cross-project efforts, establish best practices and share resources across the motion picture and broader media industries.
-  description: <li>OCIO - OCIO provides a straightforward and consistent user experience across all supporting applications while allowing for sophisticated back-end configuration options suitable for high-end production usage.</li>
-            <li>AYON - A key feature of AYON is its ability to integrate with other industry-standard tools and formats through support for libraries like OpenUSD and OpenTimelineIO while also being open-source.</li>
-            <li>OTIO - An open source API and interchange format that facilitates the communication of editorial data and timeline information in rich and flexible workflows.</li>
-            <li>MediaPipe Pose detection in google collab</li>
+           <li>AYON - A key feature of AYON is its ability to integrate with other industry-standard tools and formats through support for libraries like OpenUSD and OpenTimelineIO while also being open-source.</li></ul>
+           <ul class="resume-item-list">OPENAI &mdash; 
+           <li>MediaPipe Pose detection in google collab</li>
            <li>MediaPipe Pose Detection on a live webcam feed in Google Colab</li>
-           <li>How to capture and label training data to improve model object detection  accuracy with an example in google colab</li>
-
-
-
-#  description: The VFX industry covers 100 percent of these projects, it is worth to go through them
-## Communications strategy
-#- skill: Communications strategy
-#  summary: <ul class="resume-item-list"><li>Enhance hdri publishing tool with new features (python,  pyqt5 )	</li>&nbsp;<li>Upgrade photoshop shotgrid integration for production use (python, photoshop, shotgrid)</li></ul>
-#  description: Content and marketing strategy,
-
-## Digital content development and creation
-#- skill: Digital content development and creation
-#  description: Copy writing, graphic design, web design, front-end web development, print design
-#  summary: <ul class="resume-item-list"><li>Enhance hdri publishing tool with new features (python,  pyqt5 )	</li>&nbsp;<li>Upgrade photoshop shotgrid integration for production use (python, photoshop, shotgrid)</li></ul>
+           <li>How to capture and label training data to improve model object detection accuracy with an example in google colab</li></ul>

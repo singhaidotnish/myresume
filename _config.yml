@@ -97,6 +97,6 @@ defaults:
       sitemap: false
 
 ### Phantom settings
-footer_text: '© 2018 Nishith Singhai'
+footer_text: '© 2018 Nishith'
 admin_name: 'Nishith Singhai'
 #google_analytics: "UA-9999999-99" # Update with your own tracking ID
