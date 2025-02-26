@@ -61,6 +61,12 @@ resume_theme:                   default
 # your Jekyll server when you edit this file. Changes
 # to _config.yml are only recognized when the server starts
 
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - .jekyll-cache
+
 # Ensure Jekyll processes all files
 include:
   - ".htaccess"
