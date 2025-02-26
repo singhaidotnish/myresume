@@ -16,6 +16,7 @@ resume_avatar:                  "true"
 resume_name:                    "Nishith Singhai"
 resume_title:                   "Sr Pipeline TD"
 
+
 # used for the contact button in _layouts/resume.html
 resume_contact_email:           "singhai.nish@gmail.com"
 
