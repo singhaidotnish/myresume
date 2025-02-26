@@ -17,10 +17,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Set up Git Remote
+      - name: Set Up Git Remote  # ✅ Check if remote exists, then update or add
         run: |
-          git remote add origin https://github.com/${{ github.repository }}.git
+          git remote remove origin || true  # Remove origin if it exists (ignores errors)
+          git remote add origin https://github.com/singhaidotnish/myresume.git
           git fetch origin
+          
 
       - name: Setup Ruby & Install Jekyll
         uses: ruby/setup-ruby@v1
