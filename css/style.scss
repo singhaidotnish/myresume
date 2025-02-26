@@ -31,12 +31,12 @@ $secondary: #FF7B7B;
     display: flex;
     align-items: center;  /* Keeps everything aligned */
     justify-content: space-between; /* Optional: Adjust spacing */
-    gap: 15px;  /* Adds space between elements */
+    gap: 23px;  /* Adds space between elements */
     flex-wrap: nowrap; /* Ensures it stays on the same line */
 }
 
 .contact-info {
-    font-size: 0.8em; /* Adjust font size if needed */
+    font-size: 0.3em; /* Adjust font size if needed */
     white-space: nowrap; /* Prevents breaking into a new line */
 }
 
