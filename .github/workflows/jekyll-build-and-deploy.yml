@@ -6,6 +6,9 @@ on:
       - main  # Trigger on changes to main
   pull_request:
 
+env:
+  PAGES_REPO_NWO: singhaidotnish/myresume
+
 jobs:
   build:
     runs-on: ubuntu-latest
