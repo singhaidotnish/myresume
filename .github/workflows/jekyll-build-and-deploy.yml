@@ -14,13 +14,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
       - name: Set up Git Remote
         run: |
           git remote add origin https://github.com/${{ github.repository }}.git
           git fetch origin
-
-      - name: Checkout repository
-        uses: actions/checkout@v3
 
       - name: Setup Ruby & Install Jekyll
         uses: ruby/setup-ruby@v1
