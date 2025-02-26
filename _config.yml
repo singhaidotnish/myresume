@@ -3,7 +3,7 @@ title: "MyResume"
 description: "A resume built from template for Jekyll and GitHub Pages sites."
 url: "https://singhaidotnish.github.io"
 baseurl: "/myresume"
-repository: "singhaidotnish/myresume"
+
 # Build settings
 markdown: kramdown
 sass:
@@ -73,6 +73,10 @@ include:
 # Ensure Jekyll doesn't ignore important folders
 keep_files:
   - assets
+  - data
+  - sass
+  - css
+  - js
   - static
   - images
 
@@ -88,4 +92,4 @@ defaults:
 ### Phantom settings
 footer_text: '© 2018 Nishith Singhai'
 admin_name: 'Nishith Singhai'
-google_analytics: "UA-9999999-99" # Update with your own tracking ID
+#google_analytics: "UA-9999999-99" # Update with your own tracking ID
