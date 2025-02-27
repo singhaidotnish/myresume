@@ -27,6 +27,38 @@ $secondary: #FF7B7B;
     Custom
 ---------------------------------------------------------------*/
 
+.skill-category {
+  margin-bottom: 20px;
+}
+
+.skill-category h3 {
+  font-size: 1.4em;
+  color: #333;
+}
+
+.skill-summary ul {
+  padding-left: 20px;
+}
+
+.resume-item-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.resume-item-list li {
+  margin-bottom: 5px;
+}
+
+.resume-item-list a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.resume-item-list a:hover {
+  text-decoration: underline;
+}
+
+
 .header-title {
     display: flex;
     align-items: center;  /* Keeps everything aligned */

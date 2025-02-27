@@ -1,15 +1,34 @@
 # Skills
 # Organizational leadership
+
 - skill: Technical Skills
-  summary: <ul class="resume-item-list"><li>VFX Softwares &mdash; Maya, Nuke, Houdini</li><li>Supporting Tools &mdash; pycharm, sublime, ksnip, diff</li><li>Language &mdash; python, javascript, ruby</li><li>Framework &mdash; django, jekyll</li></ul>
+  summary: >
+    <ul class="resume-item-list">
+      <li>VFX Softwares &mdash; Maya, Nuke, Houdini</li>
+      <li>Supporting Tools &mdash; Pycharm, Sublime, Ksnip, Diff</li>
+      <li>Language &mdash; Python, JavaScript, Ruby</li>
+      <li>Framework &mdash; Django, Jekyll</li>
+    </ul>
 
 - skill: Soft Skills
-  summary: <ul class="resume-item-list"><li>Communicate &mdash; Ask all and any number of questions</li><li>Execute &mdash; Give deliverables to client (internal , external) as required</li><li>Rewire &mdash; If something does not work don't stop there, rewire</li></ul>
+  summary: >
+    <ul class="resume-item-list">
+      <li>Communicate &mdash; Ask all and any number of questions</li>
+      <li>Execute &mdash; Give deliverables to clients (internal, external) as required</li>
+      <li>Rewire &mdash; If something does not work, don’t stop there, rewire</li>
+    </ul>
 
 - skill: Self Paced Learning
-  summary: <ul class="resume-item-list">ASWF &mdash; A neutral forum to coordinate open-source cross-project efforts, establish best practices and share resources across the motion picture and broader media industries.
-           <li>AYON - A key feature of AYON is its ability to integrate with other industry-standard tools and formats through support for libraries like OpenUSD and OpenTimelineIO while also being open-source.</li></ul>
-           <ul class="resume-item-list">OPENAI &mdash; 
-           <li>MediaPipe Pose detection in google collab</li>
-           <li>MediaPipe Pose Detection on a live webcam feed in Google Colab</li>
-           <li>How to capture and label training data to improve model object detection accuracy with an example in google colab</li></ul>
+  summary: >
+    <ul class="resume-item-list">
+      ASWF &mdash; A neutral forum to coordinate open-source cross-project efforts, establish best practices, and share resources across the motion picture and broader media industries.
+      <li>AYON - A key feature of AYON is its ability to integrate with other industry-standard tools and formats through support for libraries like OpenUSD and OpenTimelineIO while also being open-source.</li>
+    </ul>
+  sub_skills:
+    - name: How to capture and label training data to improve model object detection accuracy with an example in Google Colab
+      jupyter_notebook: "https://colab.research.google.com/github/user/repo/blob/main/notebook.ipynb"
+    - name: MediaPipe Pose Detection in Google Colab
+      jupyter_notebook: "https://colab.research.google.com/github/user/repo/blob/main/notebook.ipynb"
+    - name: MediaPipe Pose Detection on a Live Webcam Feed in Google Colab
+      jupyter_notebook: "https://colab.research.google.com/github/user/repo/blob/main/notebook.ipynb"
+

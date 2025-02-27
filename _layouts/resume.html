@@ -81,7 +81,6 @@
       <!-- end Experience -->
       {% endif %}
 
-
       {% if site.resume_section_education %}
       <!-- begin Education -->
       <section class="content-section">
@@ -108,7 +107,6 @@
       <!-- end Education -->
       {% endif %}
 
-
       {% if site.resume_section_projects %}
       <!-- begin Projects -->
       <section class="content-section">
@@ -131,20 +129,28 @@
 
       {% if site.resume_section_skills %}
       <!-- begin Skills -->
-      <section class="content-section">
+        {% include skills.html %}
+<!--      <section class="content-section">-->
 
-        <header class="section-header">
-          <h2>Skills</h2>
-        </header>
-        {% for skill in site.data.skills %}
-        <div class="resume-item">
-          <h4 class="resume-item-details">{{ skill.skill }}</h4>
-          <p class="resume-item-copy">{{ skill.summary }}</p>
-          <p class="resume-item-copy">{{ skill.description }}</p>
-        </div>
-        {% endfor %}
+<!--        <header class="section-header">-->
+<!--          <h2>Skills</h2>-->
+<!--        </header>-->
+<!--        {% for skill in site.data.skills %}-->
+<!--        <div class="resume-item">-->
+<!--          <h4 class="resume-item-details">{{ skill.skill }}</h4>-->
+<!--          <ul>-->
+<!--            {% for sub in skill.sub_skills %}-->
+<!--              <li>-->
+<!--                {{ sub.name }}-->
+<!--                <p class="resume-item-copy">{{ skill.summary }}</p>-->
+<!--                <p class="resume-item-copy">{{ skill.description }}</p>-->
+<!--              </li>-->
+<!--            {% endfor %}-->
+<!--          </ul>-->
+<!--        </div>-->
+<!--        {% endfor %}-->
 
-      </section>
+<!--      </section>-->
       <!-- end Skills -->
       {% endif %}
 
