@@ -49,19 +49,27 @@
 # Sr Pipeline TD
 - company: FutureWorks, Mumbai, India
   position: Sr Pipeline TD
-  duration: Jul, 2012  &mdash; Dec, 2013
+  duration: Jan, 2013  &mdash; Dec, 2013
   summary: <ul class="resume-item-list"><li>Troubleshoot Floor Issues (python, pyqt5, maya, nuke)</li></ul>
+
+
+
+# Sr Pipeline TD
+- company: Eyeqube, Mumbai, India
+  position: Pipeline Lead
+  duration: Jan, 2010  &mdash; Dec, 2012
+  summary: <ul class="resume-item-list"><li>Troubleshoot Floor Issues (python, pyqt5, maya, nuke)</li><li>Build inhouse tools which will be called our own pipeline</li></ul>
 
 
 # Sr Pipeline TD
 - company: PrimeFocus, Mumbai, India
   position: Sr Pipeline TD
-  duration: Mar, 2010  &mdash; Jun, 2012
+  duration: Jul, 2008  &mdash; Dec, 2009
   summary: <ul class="resume-item-list"><li>EqRunner - A tool for publishing assets (python, pyqt5, maya, nuke)</li><li>Troubleshoot Floor Issues (python, pyqt5, maya, nuke)</li></ul>
 
 
 # Sr Pipeline TD
 - company: Skyworks, Mumbai, India
   position: Sr Pipeline TD
-  duration: Jan, 2008  &mdash; Jun, 2009
+  duration: Jan, 2007  &mdash; Jun, 2008
   summary: <ul class="resume-item-list"><li>fx, ncloth, maya</li><li>Troubleshoot Floor Issues (python, mel, maya, nuke)</li></ul>
