@@ -1,13 +1,13 @@
+
 # Skills
-# Organizational leadership
 
 - skill: Technical Skills
   summary: >
     <ul class="resume-item-list">
-      <li>VFX Softwares &mdash; Maya, Nuke, Houdini</li>
-      <li>Supporting Tools &mdash; Pycharm, Sublime, Ksnip, Diff</li>
-      <li>Language &mdash; Python, JavaScript, Ruby</li>
-      <li>Framework &mdash; Django, Jekyll</li>
+      <li>VFX Software &mdash; Maya, Houdini, Nuke, Blender</li>
+      <li>Pipeline Tools &mdash; USD, OpenTimelineIO, AYON, Deadline</li>
+      <li>Languages &mdash; Python (TD scripting), JavaScript (tool UIs), Bash</li>
+      <li>Web UI &mdash; React, TailwindCSS, Jekyll (internal dashboards)</li>
     </ul>
 
 - skill: Soft Skills
@@ -18,17 +18,17 @@
       <li>Rewire &mdash; If something does not work, don’t stop there, rewire</li>
     </ul>
 
-- skill: Self Paced Learning
+- skill: Self-Paced Learning
   summary: >
     <ul class="resume-item-list">
-      ASWF &mdash; A neutral forum to coordinate open-source cross-project efforts, establish best practices, and share resources across the motion picture and broader media industries.
-      <li>AYON - A key feature of AYON is its ability to integrate with other industry-standard tools and formats through support for libraries like OpenUSD and OpenTimelineIO while also being open-source.</li>
+      <li>Exploring AI in VFX using tools like RunwayML, MidJourney, and Stable Diffusion</li>
+      <li>Hands-on learning via Google Colab for MediaPipe, Pose Detection, Object Classification</li>
+      <li>Understanding modern VFX pipeline standards like USD and AYON</li>
     </ul>
   sub_skills:
-    - name: How to capture and label training data to improve model object detection accuracy with an example in Google Colab
+    - name: Capture and label training data for object detection
       jupyter_notebook: "https://colab.research.google.com/github/user/repo/blob/main/notebook.ipynb"
     - name: MediaPipe Pose Detection in Google Colab
       jupyter_notebook: "https://colab.research.google.com/github/user/repo/blob/main/notebook.ipynb"
-    - name: MediaPipe Pose Detection on a Live Webcam Feed in Google Colab
+    - name: Real-time Webcam Pose Detection with MediaPipe
       jupyter_notebook: "https://colab.research.google.com/github/user/repo/blob/main/notebook.ipynb"
-
