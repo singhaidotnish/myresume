@@ -1,0 +1,51 @@
+.
+├── _assets
+│   └── icons
+│       └── icon-blog.svg
+├── assets
+│   └── css
+│       └── style.css
+├── CNAME
+├── _config.yml
+├── css
+│   ├── animate.min.css
+│   ├── main.css
+│   ├── style.css
+│   └── style.scss
+├── _data
+│   ├── education.yml
+│   ├── experience.yml
+│   └── skills.yml
+├── Dockerfile
+├── favicon.png
+├── Gemfile
+├── Gemfile.lock
+├── images
+│   ├── avatar.png
+│   └── screenshot.png
+├── _includes
+│   ├── contact.html
+│   ├── contact-modal.html
+│   ├── foot.html
+│   ├── head.html
+│   ├── icon-links.html
+│   ├── icons
+│   │   └── icon-blog.html
+│   ├── print-social-links.html
+│   └── skills.html
+├── index.html
+├── js
+│   ├── app.js
+│   └── wow.min.js
+├── _layouts
+│   ├── default.html
+│   └── resume.html
+├── LICENSE
+├── myresume.gemspec
+├── README.md
+├── tree_structure.txt
+└── vendor
+    └── bundle
+        └── ruby
+
+14 directories, 34 files
